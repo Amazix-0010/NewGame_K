@@ -6,12 +6,6 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string firstLevel;
-    // Start is called before the first frame update
-
-  /*  public void Continue()
-    {
-
-    }*/
 
     public void StartGame()
     {
