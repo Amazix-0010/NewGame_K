@@ -40,7 +40,7 @@ public class EnemyController : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "WALL")
         {

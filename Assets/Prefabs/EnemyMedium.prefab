@@ -303,7 +303,7 @@ MonoBehaviour:
   - {fileID: 9116103836933044973, guid: 7aabad191710b244b87ad6eb522a1dcb, type: 3}
   _weapon: {fileID: 6328058340276392310, guid: f9c9850b633c9d04fb586c30f3e036ba, type: 3}
   _anim: {fileID: 1500197015060691613}
-  _wall: {fileID: 8815682183647431145, guid: d8693c3e0b597934c8fc3fa684ebe09b, type: 3}
+  _wall: {fileID: 4818075268461798334, guid: d8693c3e0b597934c8fc3fa684ebe09b, type: 3}
 --- !u!114 &5795031049671760517
 MonoBehaviour:
   m_ObjectHideFlags: 0
