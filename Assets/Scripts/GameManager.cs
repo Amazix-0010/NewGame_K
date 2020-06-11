@@ -37,7 +37,6 @@ public class GameManager : MonoBehaviour
     public void PlayerWin()
     {
         SceneManager.LoadScene(_winMenu1);
-        Cursor.lockState = CursorLockMode.None;
         Debug.Log("WIN MENU APPEAR");
     }
 }
