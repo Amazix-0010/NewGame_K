@@ -34,9 +34,12 @@ public class WallHealth : MonoBehaviour
         Debug.Log("ZEĎ ZTRACI ZIVOTY" + _damageAmount);
 
         _wallCurrent -= _damageAmount;
-        
+
 
         if (_wallCurrent <= 0)
+        {
             Destroy(gameObject);
+            GameManager.instance.PlayerDied();
+        }
     }
 }

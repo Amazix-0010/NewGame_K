@@ -92,7 +92,7 @@ BoxCollider:
   m_GameObject: {fileID: 1500197015060691610}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -298,9 +298,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _agent: {fileID: 1500197015504535058}
   _direction:
-  - {fileID: 3249784179964680853, guid: 3cde55338374e18478ba687452394849, type: 3}
-  - {fileID: 8569677659316860687, guid: 43db6b988df189f4e808e6cccfc3d30e, type: 3}
-  - {fileID: 9116103836933044973, guid: 7aabad191710b244b87ad6eb522a1dcb, type: 3}
+  - {fileID: 8814131764428750534, guid: 47bd908f0f9d5dc4dbf7db1309316b88, type: 3}
+  - {fileID: 5886567277210746399, guid: b55062a0c64326046aa867d49908f481, type: 3}
+  - {fileID: 7457149591907254265, guid: 8bdf91aa0d45f03479bf1391ba92e136, type: 3}
   _weapon: {fileID: 6328058340276392310, guid: f9c9850b633c9d04fb586c30f3e036ba, type: 3}
   _anim: {fileID: 1500197015060691613}
   _wall: {fileID: 4818075268461798334, guid: d8693c3e0b597934c8fc3fa684ebe09b, type: 3}
