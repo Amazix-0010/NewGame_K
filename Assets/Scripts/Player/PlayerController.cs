@@ -8,10 +8,11 @@ public class PlayerController : MonoBehaviour
 
     public Transform _firingPoint;
     public GameObject _bulletPrefab;
+    public GameObject _gun;
 
     public Transform _camTrans;
 
-    public GameObject _gun;
+    public int _scorePlayer;
 
     private void Awake()
     {
@@ -41,9 +42,8 @@ public class PlayerController : MonoBehaviour
             {
                 _firingPoint.LookAt(_camTrans.position + (_camTrans.forward * 45f));
             }
-
             FireShot();
-        }
+        }       
     }
     public void FireShot()
     {

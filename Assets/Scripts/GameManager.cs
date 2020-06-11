@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public string _mainMenu;
 
+    public string _winMenu1;
+
 
     private void Awake()
     {
@@ -23,12 +25,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void PlayerDied()
     {       
         SceneManager.LoadScene(_mainMenu);
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void PlayerWin()
+    {
+        SceneManager.LoadScene(_winMenu1);
+        Cursor.lockState = CursorLockMode.None;
+        Debug.Log("WIN MENU APPEAR");
     }
 }

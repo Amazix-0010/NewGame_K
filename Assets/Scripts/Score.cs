@@ -10,6 +10,7 @@ public class Score : MonoBehaviour
     public float _scoreWin;
     private float _scoreCurrent;
 
+
     private void Awake()
     {
         instance = this;
@@ -23,6 +24,14 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _scoreCurrent = PlayerController.instance._scorePlayer;
         UIController.instance._score.text = "SCORE: " + _scoreCurrent + " / " + _scoreWin;
+
+        if(_scoreCurrent >= _scoreWin)
+        {
+            Debug.Log("VYHRALS");
+            GameManager.instance.PlayerWin();
+        }
     }
+
 }
