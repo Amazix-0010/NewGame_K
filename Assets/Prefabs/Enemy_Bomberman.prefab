@@ -118,8 +118,8 @@ MonoBehaviour:
   - {fileID: 5886567277210746399, guid: b55062a0c64326046aa867d49908f481, type: 3}
   _wall: {fileID: 4818075268461798334, guid: d8693c3e0b597934c8fc3fa684ebe09b, type: 3}
   _damage: 50
-  _boom: {fileID: 6151525368645283349, guid: c12a3dc107b893d4e9682d7feaf8393a, type: 3}
-  speed: 15
+  _boom: {fileID: 6018933636172639134, guid: c12a3dc107b893d4e9682d7feaf8393a, type: 3}
+  speed: 25
 --- !u!195 &8061243185092925976
 NavMeshAgent:
   m_ObjectHideFlags: 0

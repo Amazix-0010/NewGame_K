@@ -9,6 +9,8 @@ public class UIController : MonoBehaviour
 
     public Text _wallHealth;
 
+    public Text _score;
+
     private void Awake()
     {
         instance = this;
