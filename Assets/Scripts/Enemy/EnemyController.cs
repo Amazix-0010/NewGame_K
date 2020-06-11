@@ -20,6 +20,8 @@ public class EnemyController : MonoBehaviour
 
     private int _damage;
 
+    private float _attackTime;
+
     private void Awake()
     {
         instance = this;
@@ -36,20 +38,21 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         transform.LookAt(_wall);
-        MeleeWeaponContr.instance._attackTime -= Time.deltaTime;
+        _attackTime = MeleeWeaponContr.instance._attackTime;
+        _attackTime -= 1;
 
     }
 
-    public void OnCollisionEnter(Collision other)
+    public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "WALL")
+        if (other.gameObject.tag == "TriggerWall")
         {
             _agent.destination = transform.position;
             transform.rotation = _wall.rotation;
             Debug.Log("ATTACK");
             
 
-            if (MeleeWeaponContr.instance._attackTime <= 0)
+            if (_attackTime <= 0)
             {
                 WallHealth.instance.DamageWall(_damage);
                 _anim.Play();

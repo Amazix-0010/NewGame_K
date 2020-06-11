@@ -31,7 +31,7 @@ public class WallHealth : MonoBehaviour
 
     public void DamageWall(int _damageAmount)
     {
-        Debug.Log("ZD ZTRACI ZIVOTY" + _damageAmount);
+        Debug.Log("ZEĎ ZTRACI ZIVOTY" + _damageAmount);
 
         _wallCurrent -= _damageAmount;
         
