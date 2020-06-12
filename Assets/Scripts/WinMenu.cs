@@ -11,12 +11,16 @@ public class WinMenu : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        Cursor.lockState = CursorLockMode.None;
     }
 
-    public void Start()
+    void Start()
     {
-        
+        Cursor.visible = true;
+    }
+
+    void Update()
+    {
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void NextRound()

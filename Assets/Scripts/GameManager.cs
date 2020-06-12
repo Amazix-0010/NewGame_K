@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public string _mainMenu;
+    public string _loseMenu;
 
     public string _winMenu1;
 
@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
 
     public void PlayerDied()
     {       
-        SceneManager.LoadScene(_mainMenu);
+        SceneManager.LoadScene(_loseMenu);
+        Debug.Log("LOSE MENU APPEAR");
         Cursor.lockState = CursorLockMode.None;
     }
 
