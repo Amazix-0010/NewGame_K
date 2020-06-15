@@ -15,8 +15,6 @@ public class BomberManContr : MonoBehaviour
 
     public int _damage;
 
-    public GameObject _boom;
-
     private void Awake()
     {
         instance = this;
@@ -41,7 +39,6 @@ public class BomberManContr : MonoBehaviour
             Debug.Log("BOOM");
             WallHealth.instance.DamageWall(_damage);
             Destroy(gameObject);
-            Instantiate(_boom, transform.position + transform.position * 4f, transform.rotation);
         }
     }
 }
