@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
     public ParticleSystem _bulletPart;
 
     public bool _damageEnemy;
-    public bool _damagePlayer;
+    // public bool _damagePlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -40,19 +40,6 @@ public class Bullet : MonoBehaviour
 
             other.gameObject.GetComponent<EnemyHealth>().DamageEnemy(_damageAmount);
         }
-
-        /*if (other.gameObject.tag == "HeadShot" && _damageEnemy == true)
-        {
-            other.transform.parent.GetComponent<EnemyHealth>().DamageEnemy(_damageAmount * 5);
-            Debug.Log("HEADSHOT");
-        }*/
-
-
-        /* if (other.gameObject.tag == "Player" && _damagePlayer == true)
-         {
-             PlayerHealth.instance.DamagePlayer(_damageAmount);
-         }*/
-
         Instantiate(_bulletPart, transform.position + (transform.forward * (-_bulletSpeed * Time.deltaTime)), transform.rotation);
         Destroy(gameObject);
     }
