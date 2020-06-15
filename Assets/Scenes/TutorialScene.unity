@@ -1019,9 +1019,9 @@ RectTransform:
   m_Father: {fileID: 1343073675}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -721.5, y: -490}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 238.5, y: 50}
   m_SizeDelta: {x: 467.56293, y: 95.58331}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384923354
@@ -1446,6 +1446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 948188787}
   - component: {fileID: 948188786}
+  - component: {fileID: 948188788}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1481,6 +1482,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &948188788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948188785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ac8bb1e0f21db4d924672a225b8c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreWin: 50
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,31 +1614,6 @@ MonoBehaviour:
   _gun: {fileID: 2044169978}
   _camTrans: {fileID: 1117392218}
   _scorePlayer: 0
---- !u!114 &1150224707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150224700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b733b78cfc385e449a36c55cdc2b124, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1150224708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150224700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42ac8bb1e0f21db4d924672a225b8c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scoreWin: 50
 --- !u!1 &1171812556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,10 +2061,10 @@ RectTransform:
   m_Father: {fileID: 1343073675}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 705.7, y: 505.6}
-  m_SizeDelta: {x: 494.75146, y: 54.79625}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -254.29999, y: -34.399994}
+  m_SizeDelta: {x: 494.75146, y: 54.796265}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1296512463
 GameObject:
@@ -3661,9 +3650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab:
-  - {fileID: 3148754784656205913, guid: 1c07713d3e85b774fa5f95879e01933d, type: 3}
-  - {fileID: 3148754784656205913, guid: 1c07713d3e85b774fa5f95879e01933d, type: 3}
-  - {fileID: 3148754784656205913, guid: 1c07713d3e85b774fa5f95879e01933d, type: 3}
+  - {fileID: 3148754784656205913, guid: dc6bc70d454b1b748bf0916f3adb2f91, type: 3}
   spawnTime: 6
 --- !u!4 &2100505288
 Transform:

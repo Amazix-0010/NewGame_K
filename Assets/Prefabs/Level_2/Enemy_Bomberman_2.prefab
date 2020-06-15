@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2582485832623230547}
   - component: {fileID: -8579623141984077998}
   m_Layer: 0
-  m_Name: Enemy_Bomberman
+  m_Name: Enemy_Bomberman_2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   - {fileID: 7457149591907254265, guid: 8bdf91aa0d45f03479bf1391ba92e136, type: 3}
   - {fileID: 5886567277210746399, guid: b55062a0c64326046aa867d49908f481, type: 3}
   _wall: {fileID: 4818075268461798334, guid: d8693c3e0b597934c8fc3fa684ebe09b, type: 3}
-  _damage: 100
+  _damage: 20
   _boom: {fileID: 6018933636172639134, guid: c12a3dc107b893d4e9682d7feaf8393a, type: 3}
 --- !u!195 &8061243185092925976
 NavMeshAgent:
@@ -129,7 +129,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 6
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthEnemy: 10
-  _scoreEnemy: 30
+  _scoreEnemy: 10
 --- !u!1001 &6633896189284610235
 PrefabInstance:
   m_ObjectHideFlags: 0
