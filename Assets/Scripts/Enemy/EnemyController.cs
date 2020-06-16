@@ -12,15 +12,15 @@ public class EnemyController : MonoBehaviour
 
     public Transform[] _direction;
 
-    public GameObject _weapon;
+   // public GameObject _weapon;
 
-    public Animation _anim;
+   // public Animation _anim;
 
     public Transform _wall;
 
     private int _damage;
 
-    private float _attackTime;
+  //  private float _attackTime;
 
     private void Awake()
     {
@@ -38,8 +38,8 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         transform.LookAt(_wall);
-        _attackTime = MeleeWeaponContr.instance._attackTime;
-        _attackTime -= 1;
+       // _attackTime = MeleeWeaponContr.instance._attackTime;
+       // _attackTime -= 1;
 
     }
 
@@ -49,15 +49,12 @@ public class EnemyController : MonoBehaviour
         {
             _agent.destination = transform.position;
             transform.rotation = _wall.rotation;
-            Debug.Log("ATTACK");
-            
 
-            if (_attackTime <= 0)
-            {
-                WallHealth.instance.DamageWall(_damage);
-                _anim.Play();
-            }
-            MeleeWeaponContr.instance._attackTime -= Time.deltaTime;
+            Debug.Log("ATTACK");           
+            WallHealth.instance.DamageWall(_damage);
+
+           // _anim.Play();
+          //  MeleeWeaponContr.instance._attackTime -= Time.deltaTime;
 
         }
     }

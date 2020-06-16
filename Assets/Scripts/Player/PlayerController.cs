@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
                 _firingPoint.LookAt(_camTrans.position + (_camTrans.forward * 45f));
             }
             FireShot();
+            AudioManager.instance.PlaySFX(1);
         }       
     }
     public void FireShot()

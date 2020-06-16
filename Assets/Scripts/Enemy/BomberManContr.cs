@@ -38,6 +38,7 @@ public class BomberManContr : MonoBehaviour
         {
             Debug.Log("BOOM");
             WallHealth.instance.DamageWall(_damage);
+            AudioManager.instance.PlaySFX(0);
             Destroy(gameObject);
         }
     }
